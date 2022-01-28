@@ -1,14 +1,14 @@
 from gym.envs.registration import register
-from gym_foodhunting.foodhunting.gym_foodhunting import HSR, HSRSimple
-from gym_foodhunting.foodhunting.maze import HSR, HSRSimple
-from gym_foodhunting.foodhunting.grasping import HSR, HSRSimple
+from gym_foodhunting.foodhunting.gym_foodhunting import HSR_FH, HSRSimple_FH
+from gym_foodhunting.foodhunting.maze import HSR_M, HSRSimple_M
+from gym_foodhunting.foodhunting.grasping import HSR_G, HSRSimple_G
 # FoodHunting HSR
 register(
     id='FoodHuntingHSR-v0',
     entry_point='gym_foodhunting.foodhunting:FoodHuntingEnv',
     max_episode_steps=50,
     kwargs={'render': False,
-            'robot_model': HSRSimple,
+            'robot_model': HSRSimple_FH,
             'max_steps': 50,
             'num_foods': 1,
             'num_fakes': 1,
@@ -22,7 +22,7 @@ register(
     id='FoodHuntingHSRGUI-v0',
     entry_point='gym_foodhunting.foodhunting:FoodHuntingEnv',
     max_episode_steps=50,
-    kwargs={'render': True, 'robot_model': HSRSimple, 'max_steps': 50, 'num_foods': 1, 'num_fakes': 1, 'object_size': 0.5, 'object_radius_scale': 1.0, 'object_radius_offset': 1.0, 'object_angle_scale': 1.0}
+    kwargs={'render': True, 'robot_model': HSRSimple_FH, 'max_steps': 50, 'num_foods': 1, 'num_fakes': 1, 'object_size': 0.5, 'object_radius_scale': 1.0, 'object_radius_offset': 1.0, 'object_angle_scale': 1.0}
 )
 
 register(
@@ -30,7 +30,7 @@ register(
     entry_point='gym_foodhunting.foodhunting:MazeEnv',
     max_episode_steps=50,
     kwargs={'render': False,
-            'robot_model': HSRSimple,
+            'robot_model': HSRSimple_M,
             'max_steps': 50,
             'num_foods': 1,
             'num_fakes': 0,
@@ -44,7 +44,7 @@ register(
     id='MazeNavigatingHSRGUI-v0',
     entry_point='gym_foodhunting.foodhunting:MazeEnv',
     max_episode_steps=50,
-    kwargs={'render': True, 'robot_model': HSRSimple, 'max_steps': 50, 'num_foods': 1, 'num_fakes': 0, 'object_size': 0.5, 'object_radius_scale': 1.0, 'object_radius_offset': 1.0, 'object_angle_scale': 1.0}
+    kwargs={'render': True, 'robot_model': HSRSimple_M, 'max_steps': 50, 'num_foods': 1, 'num_fakes': 0, 'object_size': 0.5, 'object_radius_scale': 1.0, 'object_radius_offset': 1.0, 'object_angle_scale': 1.0}
 )
 
 register(
@@ -52,7 +52,7 @@ register(
     entry_point='gym_foodhunting.foodhunting:GraspingEnv',
     max_episode_steps=50,
     kwargs={'render': False,
-            'robot_model': HSRSimple,
+            'robot_model': HSRSimple_G,
             'max_steps': 50,
             'num_foods': 1,
             'num_fakes': 0,
@@ -66,7 +66,7 @@ register(
     id='GraspingHSRGUI-v0',
     entry_point='gym_foodhunting.foodhunting:GraspingEnv',
     max_episode_steps=50,
-    kwargs={'render': True, 'robot_model': HSRSimple, 'max_steps': 50, 'num_foods': 1, 'num_fakes': 0, 'object_size': 0.1, 'object_radius_scale': 0.1, 'object_radius_offset': 0.5, 'object_angle_scale': 0.1}
+    kwargs={'render': True, 'robot_model': HSRSimple_G, 'max_steps': 50, 'num_foods': 1, 'num_fakes': 0, 'object_size': 0.1, 'object_radius_scale': 0.1, 'object_radius_offset': 0.5, 'object_angle_scale': 0.1}
 )
 
 
@@ -74,12 +74,12 @@ register(
     id='FoodHuntingHSRTestGUI-v0',
     entry_point='gym_foodhunting.foodhunting:FoodHuntingEnv',
     max_episode_steps=10000,
-    kwargs={'render': True, 'robot_model': HSR, 'max_steps': 10000, 'num_foods': 3, 'num_fakes': 3, 'object_size': 0.5, 'object_radius_scale': 1.0, 'object_radius_offset': 1.0, 'object_angle_scale': 1.0}
+    kwargs={'render': True, 'robot_model': HSR_FH, 'max_steps': 10000, 'num_foods': 3, 'num_fakes': 3, 'object_size': 0.5, 'object_radius_scale': 1.0, 'object_radius_offset': 1.0, 'object_angle_scale': 1.0}
 )
 
 register(
     id='FoodHuntingHSRTestGUI-v1',
     entry_point='gym_foodhunting.foodhunting:FoodHuntingEnv',
     max_episode_steps=10000,
-    kwargs={'render': True, 'robot_model': HSRSimple, 'max_steps': 10000, 'num_foods': 1, 'num_fakes': 0, 'object_size': 0.5, 'object_radius_scale': 0.0, 'object_radius_offset': 1.5, 'object_angle_scale': 0.25}
+    kwargs={'render': True, 'robot_model': HSRSimple_FH, 'max_steps': 10000, 'num_foods': 1, 'num_fakes': 0, 'object_size': 0.5, 'object_radius_scale': 0.0, 'object_radius_offset': 1.5, 'object_angle_scale': 0.25}
 )
