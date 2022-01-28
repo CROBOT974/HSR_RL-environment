@@ -237,7 +237,7 @@ class Robot:
         self.printJointInfoArray(range(p.getNumJoints(self.robotId)))
 
 
-class HSR(Robot):
+class HSR_G(Robot):
     URDF_PATH = 'hsrb4s.urdf'
 
     # viewMatrix settings
@@ -251,7 +251,7 @@ class HSR(Robot):
     def __init__(self, urdfPath=URDF_PATH, position=[0.0, 0.0, 0.05], orientation=[0.0, 0.0, 0.0, 1.0]):
         """Make a HSR robot model.
         """
-        super(HSR, self).__init__(urdfPath, position, orientation)
+        super(HSR_G, self).__init__(urdfPath, position, orientation)
 
     # override methods
     @classmethod
@@ -415,7 +415,7 @@ class HSR(Robot):
         return self.getJointPosition(30), self.getJointPosition(32)
 
 
-class HSRSimple(HSR):
+class HSRSimple_G(HSR_G):
     @classmethod
     def getActionSpace(cls):
         """Return action_space for gym Env class.
@@ -443,7 +443,7 @@ class GraspingEnv(gym.Env):
     GRAVITY = -10.0
     BULLET_STEPS = 120  # p.setTimeStep(1.0 / 240.0), so 1 gym step == 0.5 sec.
 
-    def __init__(self, render=False, robot_model=HSR, max_steps=500, num_foods=3, num_fakes=0, object_size=1.0,
+    def __init__(self, render=False, robot_model=HSRSimple_G, max_steps=500, num_foods=3, num_fakes=0, object_size=1.0,
                  object_radius_scale=1.0, object_radius_offset=1.0, object_angle_scale=1.0):
         """Initialize environment.
         """
