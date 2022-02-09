@@ -1,0 +1,4 @@
+numpy
+gym
+opencv-python
+pybullet
