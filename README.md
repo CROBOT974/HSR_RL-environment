@@ -52,6 +52,7 @@ cd ..
 ```
 
 ## Training example
+Following codes are only involved with PPO algorithm as example.
 ### Run training
 * **Foodsearhing model**
 ```
