@@ -84,7 +84,18 @@ python examples/rl.py --env_name="MazeNavigatingHSRGUI-v0" --total_timesteps=100
 python examples/rl.py --env_name="GraspingHSRGUI-v0" --total_timesteps=1000 --filename="saved_model_G" --play
 ```
 ### Testing Result
-You can see the demonstration which denotes the dramatic performance of RL algorithm due to the difference between 2e3 timesteps traning and  2e5 timesteps training as following:
-[food-searching]
-[maze]
-[grasping]
+You can see the demonstration which denotes the dramatic performance of RL algorithm due to the difference between 2e3 timesteps traning and  2e5 timesteps training as following(Click on thumbnail to download video.):
+
+* **Foodsearhing**
+
+[![image](https://user-images.githubusercontent.com/74949016/158224680-57b9b935-e35c-4afc-a4f4-7649db8a47d5.png)](https://github.com/CROBOT975/HSR_RL-environment/blob/main/demonstration/food-searching_result.mp4?raw=true)
+
+* **Mazenavigating**
+
+[![image](https://user-images.githubusercontent.com/74949016/158225342-e2fcf6ba-7e01-4c92-ad17-0f37acf976bc.png)](https://github.com/CROBOT975/HSR_RL-environment/blob/main/demonstration/maze-result.mp4?raw=true)
+
+* **Grasping**
+
+[![image](https://user-images.githubusercontent.com/74949016/158225074-7cc990dc-d733-4ab2-a824-d000a77e1f3e.png)](https://github.com/CROBOT975/HSR_RL-environment/blob/main/demonstration/grasping_result.mp4?raw=true)
+
+
