@@ -4,15 +4,15 @@ This project contains three environments of Toyota HSR for RL research. Three en
 
 
 ### Training example
-* **Training foodsearhing model**
+* **Foodsearhing model**
 ```
 python examples/rl.py --env_name="FoodHuntingHSR-v0" --total_timesteps=206083 --filename="saved_model_F"
 ```
-* **Training mazenavigating model**
+* **Mazenavigating model**
 ```
 python examples/rl.py --env_name="MazeNavigatingHSR-v0" --total_timesteps=206083 --filename="saved_model_M"
 ```
-* **Training Learn grasping model**
+* **Grasping model**
 ```
 python examples/rl.py --env_name="GraspingHSR-v0" --total_timesteps=206083 --filename="saved_model_G"
 ```
