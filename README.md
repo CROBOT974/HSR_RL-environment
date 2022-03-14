@@ -84,8 +84,7 @@ python examples/rl.py --env_name="MazeNavigatingHSRGUI-v0" --total_timesteps=100
 python examples/rl.py --env_name="GraspingHSRGUI-v0" --total_timesteps=1000 --filename="saved_model_G" --play
 ```
 ### Testing Result
-* **Foodsearching**
-
-* **MazeNavigating**
-
-* **Grasping**
+You can see the demonstration which denotes the dramatic performance of RL algorithm due to the difference between 2e3 timesteps traning and  2e5 timesteps training as following:
+[food-searching]
+[maze]
+[grasping]
