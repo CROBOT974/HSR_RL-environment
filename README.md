@@ -51,7 +51,8 @@ pip install -e .
 cd ..
 ```
 
-### Training example
+## Training example
+### Run training
 * **Foodsearhing model**
 ```
 python examples/rl.py --env_name="FoodHuntingHSR-v0" --total_timesteps=206083 --filename="saved_model_F"
@@ -64,6 +65,12 @@ python examples/rl.py --env_name="MazeNavigatingHSR-v0" --total_timesteps=206083
 ```
 python examples/rl.py --env_name="GraspingHSR-v0" --total_timesteps=206083 --filename="saved_model_G"
 ```
+### The result of training three models by PPO(Proximal Policy Optimization) and SAC(Soft Actor-Crtic)
+![image](https://user-images.githubusercontent.com/74949016/158178385-d3486bed-b6c0-4861-9b4c-3135e591ec91.png)
+![image](https://user-images.githubusercontent.com/74949016/158179067-ff4fc10b-38b0-4eee-b46e-d25792936fcd.png)
+![image](https://user-images.githubusercontent.com/74949016/158179211-55f1e75e-48e2-466d-8f6a-8fed1f599302.png)
+
+
 ### Testing the trained model
 After taining the models, you can demonstrate them due to following codes:
 ```
