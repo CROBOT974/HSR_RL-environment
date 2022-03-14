@@ -3,10 +3,30 @@ This project contains three environments of Toyota HSR for RL research. Three en
 
 ## Install
 Here is the code installing testing in Windows 10.
-```
-git clone https://github.com/wbap/PyLIS.git
-```
 
+* **Downloading the codes moving to its content**
+```
+git clone https://github.com/CROBOT975/HSR_RL-environment.git
+cd HSR_RL-enviroment
+```
+* **Activating the venv**
+```
+cd venv/Scripts
+activate
+cd ../..
+```
+* **Installing the required packages**
+```
+pip install numpy
+pip install gym
+pip install pybullet
+pip install stable-baselines3
+```
+```
+git clone https://github.com/ToyotaResearchInstitute/hsr_meshes.git
+cp -rp hsr_meshes venv/lib/python3.9/site-packages/pybullet_data
+cp -p gym-foodhunting/urdf/hsrb4s.urdf venv/lib/python3.9/site-packages/pybullet_data
+```
 
 ### Training example
 * **Foodsearhing model**
