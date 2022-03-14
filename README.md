@@ -84,3 +84,8 @@ python examples/rl.py --env_name="MazeNavigatingHSRGUI-v0" --total_timesteps=100
 python examples/rl.py --env_name="GraspingHSRGUI-v0" --total_timesteps=1000 --filename="saved_model_G" --play
 ```
 ### Testing Result
+* **Foodsearching**
+
+* **MazeNavigating**
+
+* **Grasping**
