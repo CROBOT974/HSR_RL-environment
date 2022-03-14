@@ -7,7 +7,7 @@ Here is the code installing testing in Windows 10.
 * **Downloading the codes moving to its content**
 ```
 git clone https://github.com/CROBOT975/HSR_RL-environment.git
-cd HSR_RL-enviroment
+cd HSR_RL-enviroment/PyHSR
 ```
 * **Activating the venv**
 ```
