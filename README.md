@@ -71,7 +71,8 @@ python examples/rl.py --env_name="GraspingHSR-v0" --total_timesteps=206083 --fil
 ![image](https://user-images.githubusercontent.com/74949016/158179211-55f1e75e-48e2-466d-8f6a-8fed1f599302.png)
 
 
-### Testing the trained model
+## Testing the trained model
+### Run testing
 After taining the models, you can demonstrate them due to following codes:
 ```
 python examples/rl.py --env_name="FoodHuntingHSRGUI-v0" --total_timesteps=10000 --filename="saved_model_F" --play
@@ -82,3 +83,4 @@ python examples/rl.py --env_name="MazeNavigatingHSRGUI-v0" --total_timesteps=100
 ```
 python examples/rl.py --env_name="GraspingHSRGUI-v0" --total_timesteps=1000 --filename="saved_model_G" --play
 ```
+### Testing Result
