@@ -25,7 +25,7 @@ pip install stable-baselines3
 ```
 git clone https://github.com/ToyotaResearchInstitute/hsr_meshes.git
 cp -rp hsr_meshes venv/lib/python3.9/site-packages/pybullet_data
-cp -p gym-foodhunting/urdf/hsrb4s.urdf venv/lib/python3.9/site-packages/pybullet_data
+cp -p HSR_RL_env/urdf/hsrb4s.urdf venv/lib/python3.9/site-packages/pybullet_data
 ```
 
 ### Training example
